@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
     int age = 18;
     double score = 10.0;
     bool sex = true;
-    Person person = new Person(name: 'alan', age: 3, sex: false);
+    Person person = Person(name: 'alan', age: 3, sex: false);
 
     return Scaffold(
       body: Column(

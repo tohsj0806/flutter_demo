@@ -18,7 +18,7 @@ var homeHandler = Handler(
     }
 );
 
-var demoParamHandler = new Handler(
+var demoParamHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<Object>> params) {
       String name = params["name"]?.first;
       String age = params["age"]?.first;
@@ -34,7 +34,7 @@ var demoParamHandler = new Handler(
       );
     });
 
-var returnParamHandler = new Handler(
+var returnParamHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<Object>> params) {
       return ReturnParamsPage();
     });

@@ -57,6 +57,13 @@ class _HomePageState extends State<HomePage> {
                 //todo
             },
           ),
+          RaisedButton(
+            child: Text('优雅的首页布局'),
+            onPressed: () {
+              //todo
+            },
+          ),
+
 
         ],
       ),

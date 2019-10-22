@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           RaisedButton(
-            child: Text('Per'),
+            child: Text('下拉刷新上拉加载'),
             onPressed: () {
                 //todo
             },

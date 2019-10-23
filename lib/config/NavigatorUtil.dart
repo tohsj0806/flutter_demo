@@ -13,6 +13,10 @@ class NavigatorUtil {
     app.router.pop(context);
   }
 
+  static void goMainPage(BuildContext context) {
+    app.router.navigateTo(context, Routes.main, replace: true);
+  }
+
   static void goHomePage(BuildContext context) {
    app.router.navigateTo(context, Routes.home, replace: true);
   }

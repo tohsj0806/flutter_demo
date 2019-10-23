@@ -10,7 +10,7 @@ class ReturnParamsPage extends StatefulWidget {
 class _ReturnParamsPageState extends State<ReturnParamsPage> {
   @override
   Widget build(BuildContext context) {
-    Person person = new Person(name: "returnName", age: 23, sex: false);
+    Person person = Person(name: "returnName", age: 23, sex: false);
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

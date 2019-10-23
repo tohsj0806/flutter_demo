@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/utils/fluro_convert_util.dart';
+import 'package:flutter_demo/views/main_page.dart';
 import 'package:flutter_demo/views/splash_page.dart';
 import 'package:flutter_demo/views/home_page.dart';
 import 'package:flutter_demo/views/demo_params_page.dart';
@@ -19,7 +20,13 @@ var homeHandler = Handler(
     }
 );
 
-var demoParamHandler = new Handler(
+var mainHandler = Handler(
+    handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return MainPage();
+    }
+);
+
+var demoParamHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<Object>> params) {
       String name = params["name"]?.first;
       String age = params["age"]?.first;
@@ -35,7 +42,7 @@ var demoParamHandler = new Handler(
       );
     });
 
-var returnParamHandler = new Handler(
+var returnParamHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<Object>> params) {
       return ReturnParamsPage();
     });

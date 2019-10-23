@@ -4,16 +4,19 @@ import 'package:flutter_demo/config/app.dart';
 import 'package:flutter_demo/config/Routes.dart';
 
 class MyApp extends StatelessWidget {
+
   MyApp() {
-   final router = new Router();
+   final router = Router();
    Routes.configureRoutes(router);
    app.router = router;
   }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App',
       onGenerateRoute: app.router.generator,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

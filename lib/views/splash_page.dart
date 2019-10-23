@@ -15,7 +15,7 @@ class _SplashPagState extends State<SplashPag> {
 //    });
     /// 上面注释的代码也可以做到倒计时
     Observable.timer(0, Duration(seconds: 2)).listen((_) {
-      NavigatorUtil.goHomePage(context);
+      NavigatorUtil.goMainPage(context);
     });
     super.initState();
   }
@@ -31,7 +31,7 @@ class _SplashPagState extends State<SplashPag> {
           ),
         ),
         child: Center(
-            child: Text('这是第二种写法的欢迎页面！',
+            child: Text('这是第二种写法的欢迎页面！(即将不用)',
                 style: TextStyle(fontSize: 22.0, color: Colors.black))),
       ),
     );

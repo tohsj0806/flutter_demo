@@ -10,11 +10,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    String name = "huangsijin";
+    String name = "huangsijin1122";
     int age = 18;
     double score = 10.0;
     bool sex = true;
-    Person person = Person(name: 'alan', age: 3, sex: false);
+    Person person = Person(name: 'alan', age: 4, sex: false);
 
     return Scaffold(
       body: Column(

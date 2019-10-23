@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/utils/fluro_convert_util.dart';
+import 'package:flutter_demo/views/main_page.dart';
 import 'package:flutter_demo/views/splash_page.dart';
 import 'package:flutter_demo/views/home_page.dart';
 import 'package:flutter_demo/views/demo_params_page.dart';
@@ -15,6 +16,12 @@ var splashHandler = Handler(
 var homeHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       return HomePage();
+    }
+);
+
+var mainHandler = Handler(
+    handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return MainPage();
     }
 );
 

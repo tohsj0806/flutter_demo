@@ -1,6 +1,9 @@
 import 'package:flutter_demo/config/NavigatorUtil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/model/Person.dart';
+import 'dart:io';
+import 'dart:convert';
+import 'PersonListPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -48,7 +51,7 @@ class _HomePageState extends State<HomePage> {
           RaisedButton(
             child: Text('PersonListView'),
             onPressed: () {
-                 //todo
+              NavigatorUtil.goPersonListPage(context);
             },
           ),
           RaisedButton(

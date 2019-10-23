@@ -34,4 +34,10 @@ class NavigatorUtil {
   static void goBackWithParams(BuildContext context, result) {
     Navigator.pop(context, result);
   }
+
+  static void goPersonListPage(BuildContext context) {
+    app.router.navigateTo(
+        context,
+        Routes.personList );
+  }
 }

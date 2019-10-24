@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/views/home_page.dart';
+import 'package:flutter_demo/views/demo/home_page.dart';
 import 'package:flutter_demo/views/splash_page.dart';
 
 class MainPage extends StatefulWidget{

@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/utils/fluro_convert_util.dart';
 import 'package:flutter_demo/views/main_page.dart';
 import 'package:flutter_demo/views/splash_page.dart';
-import 'package:flutter_demo/views/home_page.dart';
-import 'package:flutter_demo/views/demo_params_page.dart';
-import 'package:flutter_demo/views/return_params_page.dart';
-import 'package:flutter_demo/views/PersonListPage.dart';
-import 'package:flutter_demo/views/PersonDetailPage.dart';
+import 'package:flutter_demo/views/demo/home_page.dart';
+import 'package:flutter_demo/views/demo/demo_params_page.dart';
+import 'package:flutter_demo/views/demo/return_params_page.dart';
+import 'package:flutter_demo/views/demo/PersonListPage.dart';
+import 'package:flutter_demo/views/demo/PersonDetailPage.dart';
 import 'package:flutter_demo/model/Person.dart';
 
 var splashHandler = Handler(

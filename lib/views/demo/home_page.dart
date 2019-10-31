@@ -49,9 +49,15 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           RaisedButton(
-            child: Text('PersonListView'),
+            child: Text('ListView'),
             onPressed: () {
               NavigatorUtil.goPersonListPage(context);
+            },
+          ),
+          RaisedButton(
+            child: Text('GridView'),
+            onPressed: () {
+              //todo
             },
           ),
           RaisedButton(
@@ -61,7 +67,13 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           RaisedButton(
-            child: Text('优雅的首页布局'),
+            child: Text('Banner'),
+            onPressed: () {
+              //todo
+            },
+          ),
+          RaisedButton(
+            child: Text('drawer'),
             onPressed: () {
               //todo
             },

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/model/Person.dart';
 import 'package:flutter_demo/utils/HttpUtils.dart';
-import 'package:flutter_demo/views/PersonDetailPage.dart';
+import 'PersonDetailPage.dart';
 import 'dart:io';
 import 'dart:convert';
 import 'package:dio/dio.dart';

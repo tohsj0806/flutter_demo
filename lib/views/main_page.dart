@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/views/home_page.dart';
+import 'package:flutter_demo/views/demo/home_page.dart';
 import 'package:flutter_demo/views/splash_page.dart';
 
 class MainPage extends StatefulWidget{
@@ -54,14 +54,9 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: _myTabs,
-        //高亮  被点击高亮
         currentIndex: _currentIndex,
-        //修改 页面
         onTap: _itemTapped,
-        //shifting :按钮点击移动效果
-        //fixed：固定
         type: BottomNavigationBarType.fixed,
-
         fixedColor: Theme.of(context).primaryColor,
       ),
     );

@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'App',
       onGenerateRoute: app.router.generator,
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
     );
   }
 }

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
@@ -43,5 +45,12 @@ class NavigatorUtil {
     app.router.navigateTo(
         context,
         Routes.personList );
+  }
+
+  static void goPersonDetailPage(BuildContext context,Person person) {
+    String personjson = FluroConvertUtils.object2string(person);
+    app.router.navigateTo(
+        context,
+        Routes.personDetail+"?personjson=$personjson" );
   }
 }

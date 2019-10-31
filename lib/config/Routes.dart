@@ -9,6 +9,7 @@ class Routes{
   static String demoParams = "/demo_params";
   static String returnParams = "/return_params";
   static String personList = "/person_list";
+  static String personDetail = "/person_detail";
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = Handler(
@@ -21,6 +22,7 @@ class Routes{
     router.define(demoParams, handler: demoParamHandler);
     router.define(returnParams, handler: returnParamHandler);
     router.define(personList, handler: personListHandler);
+    router.define(personDetail, handler: personDetailHandler);
   }
 
 }

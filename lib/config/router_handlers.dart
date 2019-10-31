@@ -7,6 +7,8 @@ import 'package:flutter_demo/views/home_page.dart';
 import 'package:flutter_demo/views/demo_params_page.dart';
 import 'package:flutter_demo/views/return_params_page.dart';
 import 'package:flutter_demo/views/PersonListPage.dart';
+import 'package:flutter_demo/views/PersonDetailPage.dart';
+import 'package:flutter_demo/model/Person.dart';
 
 var splashHandler = Handler(
     handlerFunc: (BuildContext context, Map<String, List<String>> params) {
@@ -50,5 +52,11 @@ var returnParamHandler = Handler(
 var personListHandler = new Handler(
     handlerFunc: (BuildContext context, Map<String, List<Object>> params) {
       return PersonListPage();
+    }
+);
+
+var personDetailHandler = new Handler(
+    handlerFunc: (BuildContext context, Map<String, List<Object>> params) {
+      return PersonDetailPage(Person.fromJson(FluroConvertUtils.string2map(params['personjson'].first)));
     }
 );
